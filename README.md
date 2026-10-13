@@ -7,6 +7,7 @@ Rendered pages for https://ten-themes.vercel.app/. **Do not edit by hand** — t
 | `/` (`/desk`) | `public/index.html` — trading desk |
 | `/map` (`/map-room`) | `public/map.html` — macro & market map |
 | `/backtest` (`/lab`) | `public/backtest.html` — pick backtest |
+| `/grants` | `public/grants.html` — employer-equity map |
 | `/email` | `public/email.html` — weekly digest |
 
 `vercel.json` serves `public/` with clean URLs, the rewrites above, and security/cache headers.
