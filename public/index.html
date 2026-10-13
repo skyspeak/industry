@@ -105,9 +105,33 @@ a{color:var(--acc);font-size:11px}
 footer{padding:26px 0;color:var(--mut);font-size:11.5px}
 @media(max-width:820px){.cols{grid-template-columns:1fr}.tstats{grid-template-columns:repeat(2,1fr)}
 th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
+
+.cols>*,.cols2>*,.cols3>*,.grid>*{min-width:0}
+@media (max-width:640px){
+  body{font-size:15px}
+  th{font-size:10.5px}
+  td{font-size:12.5px}
+  .sub,.lede{font-size:13px}
+  .chip,.sl,.ist,.tag,.etype,.dirl,.ipo-w,.leg .act,.tstats span,.hs span{font-size:10px}
+  .tmeta{font-size:11.5px}
+  .grid,.ipg{grid-template-columns:minmax(0,1fr)}
+  .lrow{grid-auto-flow:row;grid-auto-columns:auto;overflow-x:visible}
+  .lcol{min-width:0}
+  .scroll{max-height:70vh}
+  .scroll table th:first-child,.scroll table td:first-child,
+  .cmx table th:first-child,.cmx table td:first-child{position:sticky;left:0;z-index:1;background:var(--bg)}
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:auto}
+  table.stack tr{padding:11px 12px;border-bottom:1px solid var(--line)}
+  table.stack td{border:0;padding:2px 0;text-align:left;position:static}
+  [data-mcollapse].mc-closed>.mc-hide{display:none !important}
+  .mc-more{display:block;width:100%;margin-top:12px;padding:13px;font:600 12.5px 'JetBrains Mono',monospace;
+    color:var(--acc);background:var(--pan);border:1px solid var(--line);border-radius:9px;cursor:pointer}
+}
+
 </style></head><body>
 <header><div class="wrap">
-<div class="top"><div><div class="kick">● Live desk · refreshed weekly</div><h1>Ten Themes</h1></div>
+<div class="top"><div><div class="kick">● Live desk · refreshed each weekday</div><h1>Ten Themes</h1></div>
 <div class="asof">Market data <b class="mono" style="color:#fff">2026-10-12</b><br>Options: CBOE delayed · 13F Q2 2026<br>Form 4 trailing 90d<br><a href="/map" style="color:#5b9cff">Macro map</a> · <a href="/backtest" style="color:#5b9cff">Backtest →</a></div></div>
 <div class="hero">
 <div class="hs"><b>10</b><span>Themes</span></div>
@@ -122,13 +146,13 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 </div></div></header>
 
 <section><div class="wrap"><h2>The Strategy</h2>
-<div class="strat"><p>Auto-generated for the <b>2026-10-12</b> close. Analyst coverage, events, IPOs, 13F and private-company files are carried from the <b>2026-09-14</b> research pass — they are not refreshed by the weekly job.</p><p>15 picks, 88.4% invested, 11.6% cash held back by the single-name cap. Portfolio beta is <b>2.19</b>. 25 defined-risk tickets cleared the liquidity screen.</p><p><b>Rating flips vs prior snapshot.</b>
+<div class="strat"><p>Auto-generated for the <b>2026-10-12</b> close. Analyst coverage, events, IPOs, 13F and private-company files are carried from the <b>2026-09-14</b> research pass — they are not refreshed by the daily job.</p><p>15 picks, 88.4% invested, 11.6% cash held back by the single-name cap. Portfolio beta is <b>2.19</b>. 25 defined-risk tickets cleared the liquidity screen.</p><p><b>Rating flips vs prior snapshot.</b>
 - <b>ISRG</b> PICK → NEUTRAL (composite 3.58)</p><p><b>Core (54%).</b> AVGO, TSM, NVDA, ETN, MU.</p><p><b>Contrarian (22%).</b> HEI, KTOS, BA, LDOS, AVAV, FSLR, VST, MP, TLN.</p><p><b>Tactical (12%).</b> ARM.</p><p><b>Funding sources.</b> AVOID: S, DDOG, CRM, CRWD, PANW, PYPL, ZS, TEM, ILMN, SDGR, IRDM, FTNT, AI.</p><p><b>The risk that actually matters.</b> 69.8% of invested capital sits in AI compute, power, and enterprise software. Highest theme-pair correlation: Cybersecurity / Enterprise Software &amp; AI Agents at <b>0.78</b>. Treat the cash sleeve as thesis insurance, not leftover.</p></div>
 </div></section>
 
 <section><div class="wrap"><h2>Pay Attention — 56 names flagged</h2>
 <p class="lede">Ranked by how many independent signals fired this week. A name here is not automatically a buy — it is where the data stopped agreeing with itself.</p>
-<div class="grid"><div class="wc">
+<div class="grid" data-mcollapse="6"><div class="wc">
 <div class="wch"><div><span class="tk">BA</span><span class="tag pick">PICK</span></div>
 <div class="wpx">$189.50<span class="d"><span class="dn">-1.7%</span></span></div></div>
 <div class="wsp"><svg class="spk" viewBox="0 0 104 30" preserveAspectRatio="none"><polyline points="0.0,12.2 1.2,13.3 2.3,13.0 3.5,13.8 4.7,16.8 5.8,10.0 7.0,11.4 8.2,6.0 9.3,6.8 10.5,7.8 11.7,9.4 12.9,10.4 14.0,12.6 15.2,10.7 16.4,11.9 17.5,12.3 18.7,13.7 19.9,12.8 21.0,11.6 22.2,7.4 23.4,3.0 24.5,4.6 25.7,8.2 26.9,9.2 28.0,9.6 29.2,13.3 30.4,12.4 31.6,11.9 32.7,13.9 33.9,14.1 35.1,16.5 36.2,19.0 37.4,17.0 38.6,16.6 39.7,16.5 40.9,15.4 42.1,10.0 43.2,14.1 44.4,10.4 45.6,12.9 46.7,3.6 47.9,1.6 49.1,0.0 50.2,4.3 51.4,3.1 52.6,4.0 53.8,3.7 54.9,4.8 56.1,5.3 57.3,4.6 58.4,7.7 59.6,9.2 60.8,9.7 61.9,13.5 63.1,14.0 64.3,16.0 65.4,15.7 66.6,15.1 67.8,16.3 68.9,16.3 70.1,17.4 71.3,18.6 72.4,16.8 73.6,16.0 74.8,15.0 76.0,15.8 77.1,18.2 78.3,19.0 79.5,16.0 80.6,16.1 81.8,16.4 83.0,20.6 84.1,23.2 85.3,22.6 86.5,21.0 87.6,22.8 88.8,21.6 90.0,23.3 91.1,22.6 92.3,30.0 93.5,28.2 94.7,29.1 95.8,25.8 97.0,25.1 98.2,25.5 99.3,27.1 100.5,27.9 101.7,28.2 102.8,26.8 104.0,27.3" fill="none" stroke="#ff5000" stroke-width="1.6"/></svg></div>
@@ -300,7 +324,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 
 <section><div class="wrap"><h2>Trade Tickets — 25 defined-risk structures</h2>
 <p class="lede">Built from live CBOE chains and screened for tradability: minimum 100 contracts of open interest, bid above $0.05, and bid-ask inside 30% of mid. Names that failed the screen got no ticket rather than an untradeable one. Every figure below is a real quoted strike.</p>
-<div class="grid"><div class="tkt">
+<div class="grid" data-mcollapse="5"><div class="tkt">
 <div class="tkh"><div><span class="tk">AVGO</span><span class="tag pick">PICK</span></div>
 <div class="tst">Bull call debit spread</div></div>
 <div class="tmeta"><span>2026-12-18</span><span>66d</span><span>Spot $354.73</span>
@@ -885,7 +909,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 
 <section><div class="wrap"><h2>Earnings Runway</h2>
 <p class="lede">Days until the next confirmed report, with the move the options market is pricing into it — derived from the at-the-money straddle on the first expiry after the print.</p>
-<div class="estrip"><div class="ec"><div class="ecd">2<span>d</span></div>
+<div class="estrip" data-mcollapse="8"><div class="ec"><div class="ecd">2<span>d</span></div>
 <div><div class="tk">TSM</div><div class="sub">2026-10-15</div></div>
 <div class="ecm">±4.0%<span>implied</span></div></div><div class="ec"><div class="ecd">7<span>d</span></div>
 <div><div class="tk">RTX</div><div class="sub">2026-10-20</div></div>
@@ -936,7 +960,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 <div class="ecm">—<span>implied</span></div></div></div>
 <h2 style="margin-top:26px">Catalyst Calendar — 32 events</h2>
 <p class="lede">Non-earnings catalysts over the next four months: product launches, regulatory decisions, capacity auctions, clinical readouts and index rebalances.</p>
-<div class="scroll"><table><thead><tr><th>Date</th><th>Tickers</th><th>Event</th><th>Type</th><th>Direction</th><th></th></tr></thead><tbody><tr><td class="mono dt">2026-10-13<div class="sub">confirmed</div></td>
+<div class="scroll"><table class="stack"><thead><tr><th>Date</th><th>Tickers</th><th>Event</th><th>Type</th><th>Direction</th><th></th></tr></thead><tbody data-mcollapse="6"><tr><td class="mono dt">2026-10-13<div class="sub">confirmed</div></td>
 <td><code>CRWD</code><code>PANW</code><code>S</code><code>ZS</code><code>FTNT</code></td>
 <td class="ev"><b>CrowdStrike CrowdTour (Oct 8+) — Regional Cybersecurity Summits</b><div class="sub">CrowdTour pipeline events in October directly feed Q4 bookings acceleration for CRWD&#x27;s fiscal Q4 (Jan) — partner-generated ARR is the fastest-growing ARR segment.</div></td>
 <td><span class="etype">conference</span></td>
@@ -1101,7 +1125,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 <section><div class="wrap"><h2>IPO Pipeline — 32 companies</h2>
 <p class="lede">What is coming public in these themes, and which listed names it reprices. A large listing does not just add a ticker — it hands the market a fresh comparable, and comparables move multiples.</p>
 <div class="ipsec"><h3>Pending <span class="sub">16</span></h3>
-<div class="ipg"><div class="ip"><div class="iph"><b>Lyntris</b><span class="ist" style="--c:#ffb020">pending</span></div>
+<div class="ipg" data-mcollapse="4"><div class="ip"><div class="iph"><b>Lyntris</b><span class="ist" style="--c:#ffb020">pending</span></div>
 <div class="ipv mono">undisclosed
 <span class="sub">Q3 2026 · LYNX</span></div>
 <div class="ipd">Defense technology company delivering sense-to-act connectivity for multi-domain battlespace; formed by merger of Accelerint and Vitesse Systems.</div>
@@ -1198,7 +1222,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 <div class="ipr"><b>Read-across</b> Mobia&#x27;s listing benchmarks non-invasive neuromodulation against Nevro and Nalu Medical, giving MDVN and Abbott a read on how the market prices clinical-stage neurostimulation absent insurance reimbursement clarity.</div>
 <div class="ipm">
 <a href="https://news.crunchbase.com/public/ipo-pipeline-thawing-ai-semiconductors-clean-energy/" target="_blank" rel="noopener noreferrer">source</a></div></div></div></div><div class="ipsec"><h3>Priced <span class="sub">10</span></h3>
-<div class="ipg"><div class="ip"><div class="iph"><b>Cerebras Systems</b><span class="ist" style="--c:#00c805">priced</span></div>
+<div class="ipg" data-mcollapse="4"><div class="ip"><div class="iph"><b>Cerebras Systems</b><span class="ist" style="--c:#00c805">priced</span></div>
 <div class="ipv mono">$56.4B
 <span class="sub">2026-05-14 · CBRS</span></div>
 <div class="ipd">Designer of the Wafer-Scale Engine 3 AI inference chip and cloud-based AI compute service; counts OpenAI and AWS as customers.</div>
@@ -1259,7 +1283,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 <div class="ipr"><b>Read-across</b> Swarmer&#x27;s pop set the benchmark for autonomous-drone multiples and validated investor willingness to price software-defined munitions at premiums over legacy defense hardware primes.</div>
 <div class="ipm">
 <a href="https://news.crunchbase.com/public/ipo-pipeline-thawing-ai-semiconductors-clean-energy/" target="_blank" rel="noopener noreferrer">source</a></div></div></div></div><div class="ipsec"><h3>Rumored <span class="sub">6</span></h3>
-<div class="ipg"><div class="ip"><div class="iph"><b>Anduril Industries</b><span class="ist" style="--c:#8ea0b5">rumored</span></div>
+<div class="ipg" data-mcollapse="4"><div class="ip"><div class="iph"><b>Anduril Industries</b><span class="ist" style="--c:#8ea0b5">rumored</span></div>
 <div class="ipv mono">$61.0B
 <span class="sub"> </span></div>
 <div class="ipd">Defense autonomy company making AI-powered drones, missiles, and Lattice OS for the US military; $2.2B 2025 revenue; $100B valuation talks in July 2026.</div>
@@ -2183,7 +2207,7 @@ th,td{padding:8px 6px;font-size:11.5px}section{padding:30px 0}}
 <p><b>This is research, not investment advice.</b> Nothing here accounts for your existing exposure, tax situation, time horizon or risk tolerance.</p>
 </div></div></div></section>
 
-<footer><div class="wrap">Ten Themes · 72 public names · 74 private competitors · 25 trade tickets · data as of 2026-10-12 · refreshed Mondays</div></footer>
+<footer><div class="wrap">Ten Themes · 72 public names · 74 private competitors · 25 trade tickets · data as of 2026-10-12 · refreshed each weekday after the US close</div></footer>
 <script>
 document.querySelectorAll('.ctrl button').forEach(b=>b.onclick=()=>{
  document.querySelectorAll('.ctrl button').forEach(x=>x.classList.remove('on'));b.classList.add('on');
@@ -2194,4 +2218,19 @@ document.querySelectorAll('#uni th').forEach((th,i)=>{let asc=false;th.onclick=(
  [...tb.rows].sort((a,b)=>{const g=r=>{const t=(r.cells[i].innerText||'').replace(/[$,%+x]/g,'').split('\n')[0].trim();
  const v=parseFloat(t);return isNaN(v)?t.toLowerCase():v;};const x=g(a),y=g(b);
  return (x>y?1:x<y?-1:0)*(asc?1:-1);}).forEach(r=>tb.appendChild(r));};});
+</script><script>
+(function(){
+  if(!window.matchMedia||!matchMedia('(max-width:640px)').matches) return;
+  document.querySelectorAll('[data-mcollapse]').forEach(function(c){
+    var n=parseInt(c.getAttribute('data-mcollapse'),10), kids=Array.prototype.slice.call(c.children);
+    if(!(n>0) || kids.length<=n+1) return;
+    kids.slice(n).forEach(function(k){k.classList.add('mc-hide')});
+    c.classList.add('mc-closed');
+    var b=document.createElement('button');
+    b.className='mc-more'; b.type='button';
+    b.textContent='Show all '+kids.length+' \u2193';
+    b.addEventListener('click',function(){c.classList.remove('mc-closed'); b.remove();});
+    c.parentNode.insertBefore(b,c.nextSibling);
+  });
+})();
 </script></body></html>

@@ -84,6 +84,30 @@ code{font:600 9.5px 'JetBrains Mono';background:rgba(91,156,255,.13);color:var(-
 .warnbox b{color:var(--warn)}
 footer{padding:26px 0;color:var(--mut);font-size:11.5px}
 @media(max-width:900px){.cols2,.cols3{grid-template-columns:1fr}th,td{padding:7px 5px;font-size:11.5px}}
+
+.cols>*,.cols2>*,.cols3>*,.grid>*{min-width:0}
+@media (max-width:640px){
+  body{font-size:15px}
+  th{font-size:10.5px}
+  td{font-size:12.5px}
+  .sub,.lede{font-size:13px}
+  .chip,.sl,.ist,.tag,.etype,.dirl,.ipo-w,.leg .act,.tstats span,.hs span{font-size:10px}
+  .tmeta{font-size:11.5px}
+  .grid,.ipg{grid-template-columns:minmax(0,1fr)}
+  .lrow{grid-auto-flow:row;grid-auto-columns:auto;overflow-x:visible}
+  .lcol{min-width:0}
+  .scroll{max-height:70vh}
+  .scroll table th:first-child,.scroll table td:first-child,
+  .cmx table th:first-child,.cmx table td:first-child{position:sticky;left:0;z-index:1;background:var(--bg)}
+  table.stack thead{display:none}
+  table.stack,table.stack tbody,table.stack tr,table.stack td{display:block;width:auto}
+  table.stack tr{padding:11px 12px;border-bottom:1px solid var(--line)}
+  table.stack td{border:0;padding:2px 0;text-align:left;position:static}
+  [data-mcollapse].mc-closed>.mc-hide{display:none !important}
+  .mc-more{display:block;width:100%;margin-top:12px;padding:13px;font:600 12.5px 'JetBrains Mono',monospace;
+    color:var(--acc);background:var(--pan);border:1px solid var(--line);border-radius:9px;cursor:pointer}
+}
+
 </style></head><body>
 <header><div class="wrap">
 <div class="top"><div><div class="kick">Macro &amp; Market Structure</div><h1>Ten Themes — Map Room</h1></div>
@@ -783,4 +807,19 @@ function rollChart(id,data){
 }
 rollChart('rollc',RC); rollChart('rollr',RR);
 window.addEventListener('resize',()=>cv.resize());
+</script><script>
+(function(){
+  if(!window.matchMedia||!matchMedia('(max-width:640px)').matches) return;
+  document.querySelectorAll('[data-mcollapse]').forEach(function(c){
+    var n=parseInt(c.getAttribute('data-mcollapse'),10), kids=Array.prototype.slice.call(c.children);
+    if(!(n>0) || kids.length<=n+1) return;
+    kids.slice(n).forEach(function(k){k.classList.add('mc-hide')});
+    c.classList.add('mc-closed');
+    var b=document.createElement('button');
+    b.className='mc-more'; b.type='button';
+    b.textContent='Show all '+kids.length+' \u2193';
+    b.addEventListener('click',function(){c.classList.remove('mc-closed'); b.remove();});
+    c.parentNode.insertBefore(b,c.nextSibling);
+  });
+})();
 </script></body></html>
