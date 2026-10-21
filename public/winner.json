@@ -1,18 +1,18 @@
 {
- "asof": "2026-10-19",
+ "asof": "2026-10-20",
  "year": 2026,
- "trading_days_left": 51,
+ "trading_days_left": 50,
  "stop": 0.35,
- "spy_ytd": 12.4,
+ "spy_ytd": 12.8,
  "position": {
   "sym": "SNDK",
   "name": "Sandisk",
   "dec31": 237.38,
-  "last": 1371.12,
-  "ytd": 477.6,
+  "last": 1365.38,
+  "ytd": 475.2,
   "low": 2.8,
   "stop_date": null,
-  "offhigh": -41.8,
+  "offhigh": -42.0,
   "spark": [
    1.159,
    1.489,
@@ -81,12 +81,12 @@
    6.78,
    6.245,
    5.474,
-   5.776
+   5.752
   ],
   "prev_ret": 559.39,
   "stop_price": 154.3,
   "stopped": false,
-  "year_ret": 477.6
+  "year_ret": 475.2
  },
  "screen": [
   {
@@ -94,12 +94,12 @@
    "name": "Moderna",
    "sector": "Health Care",
    "dec31": 29.49,
-   "last": 226.89,
-   "ytd": 669.4,
+   "last": 242.08,
+   "ytd": 720.9,
    "low": 1.1,
    "stop_date": null,
    "listed": false,
-   "offhigh": -6.4,
+   "offhigh": -0.8,
    "spark": [
     1.046,
     1.217,
@@ -168,22 +168,22 @@
     6.68,
     7.333,
     7.393,
-    7.694
+    8.209
    ],
    "in_index": true,
-   "p_win": 54.1
+   "p_win": 60.6
   },
   {
    "sym": "SNDK",
    "name": "Sandisk",
    "sector": "Information Technology",
    "dec31": 237.38,
-   "last": 1371.12,
-   "ytd": 477.6,
+   "last": 1365.38,
+   "ytd": 475.2,
    "low": 2.8,
    "stop_date": null,
    "listed": false,
-   "offhigh": -41.8,
+   "offhigh": -42.0,
    "spark": [
     1.159,
     1.489,
@@ -252,22 +252,22 @@
     6.78,
     6.245,
     5.474,
-    5.776
+    5.752
    ],
    "in_index": true,
-   "p_win": 37.5
+   "p_win": 33.4
   },
   {
    "sym": "DELL",
    "name": "Dell Technologies",
    "sector": "Information Technology",
    "dec31": 125.88,
-   "last": 455.44,
-   "ytd": 261.8,
+   "last": 461.56,
+   "ytd": 266.7,
    "low": -12.4,
    "stop_date": null,
    "listed": false,
-   "offhigh": -23.5,
+   "offhigh": -22.5,
    "spark": [
     1.015,
     0.954,
@@ -336,22 +336,22 @@
     4.564,
     4.548,
     3.588,
-    3.618
+    3.667
    ],
    "in_index": true,
-   "p_win": 6.2
+   "p_win": 4.5
   },
   {
    "sym": "MU",
    "name": "Micron Technology",
    "sector": "Information Technology",
    "dec31": 285.41,
-   "last": 904.9,
-   "ytd": 217.1,
+   "last": 896.07,
+   "ytd": 214.0,
    "low": 3.3,
    "stop_date": null,
    "listed": false,
-   "offhigh": -27.9,
+   "offhigh": -28.6,
    "spark": [
     1.105,
     1.19,
@@ -420,22 +420,22 @@
     3.629,
     3.34,
     3.079,
-    3.171
+    3.14
    ],
    "in_index": true,
-   "p_win": 0.1
+   "p_win": 0.0
   },
   {
    "sym": "MPC",
    "name": "Marathon Petroleum",
    "sector": "Energy",
    "dec31": 162.63,
-   "last": 473.69,
-   "ytd": 191.3,
+   "last": 475.04,
+   "ytd": 192.1,
    "low": -0.2,
    "stop_date": null,
    "listed": false,
-   "offhigh": -4.1,
+   "offhigh": -3.8,
    "spark": [
     1.015,
     1.061,
@@ -504,22 +504,22 @@
     2.849,
     2.933,
     2.94,
-    2.913
+    2.921
    ],
    "in_index": true,
-   "p_win": 0.6
+   "p_win": 0.4
   },
   {
    "sym": "MRVL",
    "name": "Marvell Technology",
    "sector": "Information Technology",
    "dec31": 84.98,
-   "last": 237.09,
-   "ytd": 179.0,
+   "last": 240.42,
+   "ytd": 182.9,
    "low": -16.8,
    "stop_date": null,
    "listed": false,
-   "offhigh": -28.1,
+   "offhigh": -27.1,
    "spark": [
     1.052,
     0.996,
@@ -588,17 +588,17 @@
     3.232,
     3.162,
     2.681,
-    2.79
+    2.829
    ],
    "in_index": true,
-   "p_win": 0.5
+   "p_win": 0.4
   },
   {
    "sym": "VLO",
    "name": "Valero Energy",
    "sector": "Energy",
    "dec31": 162.79,
-   "last": 433.31,
+   "last": 433.42,
    "ytd": 166.2,
    "low": -0.4,
    "stop_date": null,
@@ -682,12 +682,12 @@
    "name": "Bloom Energy",
    "sector": "Industrials",
    "dec31": 86.89,
-   "last": 226.22,
-   "ytd": 160.4,
+   "last": 222.65,
+   "ytd": 156.2,
    "low": 2.3,
    "stop_date": null,
    "listed": false,
-   "offhigh": -35.6,
+   "offhigh": -36.6,
    "spark": [
     1.136,
     1.243,
@@ -756,22 +756,22 @@
     3.14,
     3.032,
     2.547,
-    2.604
+    2.562
    ],
    "in_index": true,
-   "p_win": 0.9
+   "p_win": 0.6
   },
   {
    "sym": "AMD",
    "name": "Advanced Micro Devices",
    "sector": "Information Technology",
    "dec31": 214.16,
-   "last": 538.05,
-   "ytd": 151.2,
+   "last": 534.74,
+   "ytd": 149.7,
    "low": -12.1,
    "stop_date": null,
    "listed": false,
-   "offhigh": -18.3,
+   "offhigh": -18.8,
    "spark": [
     1.043,
     0.981,
@@ -840,7 +840,7 @@
     2.898,
     2.827,
     2.469,
-    2.512
+    2.497
    ],
    "in_index": true,
    "p_win": 0.0
@@ -850,12 +850,12 @@
    "name": "Intel",
    "sector": "Information Technology",
    "dec31": 36.9,
-   "last": 92.03,
-   "ytd": 149.4,
+   "last": 91.69,
+   "ytd": 148.5,
    "low": 2.3,
    "stop_date": null,
    "listed": false,
-   "offhigh": -35.3,
+   "offhigh": -35.6,
    "spark": [
     1.067,
     1.155,
@@ -924,7 +924,7 @@
     2.902,
     2.786,
     2.435,
-    2.494
+    2.485
    ],
    "in_index": true,
    "p_win": 0.1
@@ -1018,12 +1018,12 @@
    "name": "Hewlett Packard Enterprise",
    "sector": "Information Technology",
    "dec31": 24.02,
-   "last": 55.87,
-   "ytd": 132.6,
+   "last": 56.09,
+   "ytd": 133.5,
    "low": -17.4,
    "stop_date": null,
    "listed": false,
-   "offhigh": -24.0,
+   "offhigh": -23.7,
    "spark": [
     1.006,
     0.934,
@@ -1092,91 +1092,7 @@
     2.956,
     2.865,
     2.295,
-    2.326
-   ],
-   "in_index": true,
-   "p_win": 0.0
-  },
-  {
-   "sym": "LITE",
-   "name": "Lumentum",
-   "sector": "Information Technology",
-   "dec31": 368.59,
-   "last": 834.51,
-   "ytd": 126.4,
-   "low": -13.9,
-   "stop_date": null,
-   "listed": false,
-   "offhigh": -27.0,
-   "spark": [
-    1.048,
-    1.066,
-    0.922,
-    0.931,
-    0.983,
-    0.902,
-    1.035,
-    1.18,
-    1.498,
-    1.558,
-    1.629,
-    1.812,
-    1.963,
-    2.125,
-    1.766,
-    1.823,
-    1.689,
-    1.901,
-    1.978,
-    1.869,
-    1.907,
-    2.095,
-    2.426,
-    2.314,
-    2.426,
-    2.37,
-    2.332,
-    2.448,
-    2.698,
-    2.452,
-    2.795,
-    2.401,
-    2.617,
-    2.448,
-    2.455,
-    2.564,
-    2.229,
-    2.5,
-    2.36,
-    2.246,
-    2.217,
-    2.174,
-    1.896,
-    2.176,
-    2.04,
-    2.077,
-    2.262,
-    1.769,
-    1.937,
-    2.242,
-    2.207,
-    2.389,
-    2.369,
-    2.351,
-    2.548,
-    2.482,
-    2.299,
-    2.683,
-    2.265,
-    2.424,
-    2.566,
-    2.555,
-    2.635,
-    2.962,
-    2.845,
-    2.68,
-    2.236,
-    2.264
+    2.335
    ],
    "in_index": true,
    "p_win": 0.0
@@ -1186,12 +1102,12 @@
    "name": "Phillips 66",
    "sector": "Energy",
    "dec31": 129.04,
-   "last": 290.55,
-   "ytd": 125.2,
+   "last": 291.03,
+   "ytd": 125.5,
    "low": -0.2,
    "stop_date": null,
    "listed": false,
-   "offhigh": -3.0,
+   "offhigh": -2.8,
    "spark": [
     1.012,
     1.069,
@@ -1260,7 +1176,91 @@
     2.182,
     2.269,
     2.272,
-    2.252
+    2.255
+   ],
+   "in_index": true,
+   "p_win": 0.0
+  },
+  {
+   "sym": "LITE",
+   "name": "Lumentum",
+   "sector": "Information Technology",
+   "dec31": 368.59,
+   "last": 822.51,
+   "ytd": 123.2,
+   "low": -13.9,
+   "stop_date": null,
+   "listed": false,
+   "offhigh": -28.0,
+   "spark": [
+    1.048,
+    1.066,
+    0.922,
+    0.931,
+    0.983,
+    0.902,
+    1.035,
+    1.18,
+    1.498,
+    1.558,
+    1.629,
+    1.812,
+    1.963,
+    2.125,
+    1.766,
+    1.823,
+    1.689,
+    1.901,
+    1.978,
+    1.869,
+    1.907,
+    2.095,
+    2.426,
+    2.314,
+    2.426,
+    2.37,
+    2.332,
+    2.448,
+    2.698,
+    2.452,
+    2.795,
+    2.401,
+    2.617,
+    2.448,
+    2.455,
+    2.564,
+    2.229,
+    2.5,
+    2.36,
+    2.246,
+    2.217,
+    2.174,
+    1.896,
+    2.176,
+    2.04,
+    2.077,
+    2.262,
+    1.769,
+    1.937,
+    2.242,
+    2.207,
+    2.389,
+    2.369,
+    2.351,
+    2.548,
+    2.482,
+    2.299,
+    2.683,
+    2.265,
+    2.424,
+    2.566,
+    2.555,
+    2.635,
+    2.962,
+    2.845,
+    2.68,
+    2.236,
+    2.232
    ],
    "in_index": true,
    "p_win": 0.0
@@ -1270,12 +1270,12 @@
    "name": "Fortinet",
    "sector": "Information Technology",
    "dec31": 79.41,
-   "last": 171.5,
-   "ytd": 116.0,
+   "last": 170.93,
+   "ytd": 115.2,
    "low": -7.4,
    "stop_date": null,
    "listed": false,
-   "offhigh": -13.0,
+   "offhigh": -13.3,
    "spark": [
     0.981,
     1.008,
@@ -1344,7 +1344,7 @@
     2.381,
     2.402,
     2.13,
-    2.16
+    2.152
    ],
    "in_index": true,
    "p_win": 0.0
@@ -1616,9 +1616,9 @@
    "year": 2026,
    "sym": "SNDK",
    "name": "Sandisk",
-   "ret": 477.6,
+   "ret": 475.2,
    "dip": 0.0,
-   "spy": 12.4,
+   "spy": 12.8,
    "ytd": true,
    "stopped": false
   }
@@ -1654,7 +1654,7 @@
    35598.07,
    96541.96,
    226873.6,
-   1310421.91
+   1304976.95
   ],
   "nostop": [
    316.0,
@@ -1686,7 +1686,7 @@
    2101.64,
    5699.65,
    13394.19,
-   77364.82
+   77043.36
   ],
   "spy": [
    133.5,
@@ -1718,14 +1718,14 @@
    1035.48,
    1293.31,
    1522.23,
-   1710.99
+   1717.08
   ]
  },
  "summary": {
-  "stop_end": 1310421.91,
-  "nostop_end": 77364.82,
-  "spy_end": 1710.99,
-  "stop_cagr": 37.5,
+  "stop_end": 1304976.95,
+  "nostop_end": 77043.36,
+  "spy_end": 1717.08,
+  "stop_cagr": 37.4,
   "nostop_cagr": 25.0,
   "spy_cagr": 10.0,
   "fired": [
@@ -1738,53 +1738,53 @@
  "sweep": [
   {
    "stop": null,
-   "best": 77364.82,
-   "worst": 77364.82
+   "best": 77043.36,
+   "worst": 77043.36
   },
   {
    "stop": 0.1,
-   "best": 58647.09,
-   "worst": 417.73
+   "best": 58403.4,
+   "worst": 415.99
   },
   {
    "stop": 0.15,
-   "best": 60113.45,
-   "worst": 271.04
+   "best": 59863.67,
+   "worst": 269.91
   },
   {
    "stop": 0.2,
-   "best": 382417.53,
-   "worst": 1061.61
+   "best": 380828.54,
+   "worst": 1057.2
   },
   {
    "stop": 0.25,
-   "best": 604091.12,
-   "worst": 1000.69
+   "best": 601581.04,
+   "worst": 996.53
   },
   {
    "stop": 0.3,
-   "best": 508860.31,
-   "worst": 485.39
+   "best": 506745.93,
+   "worst": 483.37
   },
   {
    "stop": 0.35,
-   "best": 1310421.91,
-   "worst": 1310421.91
+   "best": 1304976.95,
+   "worst": 1304976.95
   },
   {
    "stop": 0.4,
-   "best": 951399.07,
-   "worst": 951399.07
+   "best": 947445.89,
+   "worst": 947445.89
   },
   {
    "stop": 0.45,
-   "best": 671751.24,
-   "worst": 671751.24
+   "best": 668960.03,
+   "worst": 668960.03
   },
   {
    "stop": 0.5,
-   "best": 458815.14,
-   "worst": 458815.14
+   "best": 456908.7,
+   "worst": 456908.7
   }
  ]
 }
